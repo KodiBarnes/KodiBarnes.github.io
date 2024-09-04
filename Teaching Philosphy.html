@@ -1,0 +1,199 @@
+<!DOCTYPE HTML>
+<!--
+	Arcana by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>My Teaching Philosophy</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Logo -->
+						<h1 style="color: cadetblue;"><a href="index.html" id="logo">Kodi <em>Barnes</em></a></h1>
+
+					<!-- Nav -->
+						<nav id="nav" style="background-color: rgb(51, 147, 182);">
+							<ul>
+								<li ><a href="index.html">Home</a></li>
+								<li>
+									<a href="#">More</a> <!-- This is the main item with the dropdown -->
+									<ul>
+										<li><a href="Techman.html">Technology Mandatory</a></li>
+										<li><a href="Industrial.html">Industrial Technology</a></li>
+										<li><a href="Construction.html">Construction VET</a></li>
+									</ul>
+								</li>
+								<li ><a href="About Me.html">About Me</a></li>
+								<li class="current"><a href="Teaching Philosphy.html">Teaching Philosophy</a></li>
+								<li><a href="Gallery.html">Gallery</a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+			<!-- Main -->
+			<section class="wrapper style1">
+				<div class="container">
+					<div class="row gtr-200">
+						<div class="col-4 col-12-narrower">
+							<div id="sidebar">
+
+								<!-- Sidebar -->
+								<section>
+									<h3>Subject Area: Tech Mandatory</h3>
+									<span class="image featured">
+										<img src="images/Lamp.jpg" alt="" style="width: 200px; height: auto;" />
+									</span>
+								</section>
+								
+								<section>
+									<h3>Subject Area: Timber</h3>
+									<span class="image featured">
+										<img src="images/Box.jpg" alt="" style="width: 200px; height: auto;" />
+									</span>
+								</section>								
+
+									<section>
+										<h3>Subject Area: Construction</h3>
+										<span class="image featured"><img src="images/Bar.JPG" alt="" /></span>
+									</section>
+
+							</div>
+						</div>
+						<div class="col-8  col-12-narrower imp-narrower">
+							<div id="content">
+
+								<!-- Content -->
+
+									<article>
+										<div style="text-align: center;">
+											<header>
+												<h2>Teaching Philosophy</h2>
+											</header>
+										
+											<span class="image featured">
+												<img src="images/SSHSLOGO.png" alt="" style="width: 300px; height: auto; display: block; margin: 0 auto;" />
+											</span>									
+										
+											<p>My Teacher Overview and Experience</p>
+										</div>
+										
+										<br>
+										<br>
+										<br>
+										<br>
+										<br>
+
+										<h3>Teaching Philosophy</h3>
+										<p>As a Teacher I belaive The students that answer the questions from the teachers 
+											are actually the ones that are learning and growing more. Learning takes time 
+											and should be slowing down the class speed in order for students to be able to 
+											process the info. There are a number of philosophies and theories I believe and follow as a teacher. What do students want in a teacher? These are listed:</p>
+										<ul style="columns: 2; -webkit-columns: 2; -moz-columns: 2; list-style-position: inside;">
+											<li>Never let them down</li>
+											<li>Caring</li>
+											<li>Encouraging</li>
+											<li>Fun</li>
+											<li>Relatable</li>
+											<li>Inspiring</li>
+											<li>Lets them be themselves</li>
+											<li>Tolerance</li>
+											<li>Passionate</li>
+										</ul>
+									</article>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Footer -->
+				<div id="footer">
+					<div class="container" style="display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center;">
+						<div style="width: 100%; max-width: 600px;">
+							<section class="col-6 col-12-narrower">
+								<h3>Get In Touch</h3>
+								<form onsubmit="showThankYouMessage(event)">
+									<div>
+										<div>
+											<label>Email:</label>
+											<input type="text" id="Email" name="Email" value="Johnsmith@gmail.com" style="width: 100%; margin-bottom: 10px;">
+											<label>Password (6+ Characters):</label>
+											<input type="password" id="Password" name="Password" value="*******" style="width: 100%; margin-bottom: 10px;">
+											<p>By clicking Agree & Continue, you agree to the 
+												<span>Terms and Conditions with Cookies Policy</span>
+											</p>
+											<ul class="actions" style="padding: 0; list-style: none; display: flex; justify-content: center;">
+												<li style="width: 100%; max-width: 400px;">
+													<input type="submit" class="button alt" value="Agree & Continue" style="background-color: blue; width: 100%;">
+												</li>
+											</ul>
+										</div>
+									</div>
+								</form>
+							</section>
+							
+							<div id="thankYouPopup" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: white; border: 2px solid #ccc; padding: 20px; z-index: 1000;">
+								<h4>Thank You!</h4>
+								<p>We will get back to you shortly.</p>
+								<button onclick="closePopup()" style="background-color: blue; color: white; border: none; padding: 10px; cursor: pointer;">Close</button>
+							</div>
+							
+							<div id="overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 999;"></div>
+							
+							<script>
+							function showThankYouMessage(event) {
+								event.preventDefault(); // Prevent form submission
+								document.getElementById('thankYouPopup').style.display = 'block'; // Show the pop-up
+								document.getElementById('overlay').style.display = 'block'; // Show the overlay
+							}
+							
+							function closePopup() {
+								document.getElementById('thankYouPopup').style.display = 'none'; // Hide the pop-up
+								document.getElementById('overlay').style.display = 'none'; // Hide the overlay
+							}
+							</script>
+							>
+						</div>
+					</div>
+
+					<!-- Icons -->
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							<li><a href="#" class="icon brands fa-google-plus-g"><span class="label">Google+</span></a></li>
+						</ul>
+
+					<!-- Copyright -->
+						<div class="copyright">
+							<ul class="menu">
+								<li>&copy; Untitled. All rights reserved</li><li>Designr: <a href="https://www.instagram.com/kodibarnes03/?next=%2F">Kodi Barnes</a></li>
+							</ul>
+						</div>
+
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
